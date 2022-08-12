@@ -1,0 +1,2 @@
+# MyJMO
+tes praktik JMO
