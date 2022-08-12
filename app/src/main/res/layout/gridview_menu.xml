@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginTop="40dp"
+    >
+
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:id="@+id/rltvMenulayanan"
+            android:background="@drawable/custom_background"
+            >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imgLogo"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:scaleType="fitCenter"
+                />
+
+
+        </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textViewLogo"
+        android:layout_below="@id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logo"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:textSize="12sp" />
+</LinearLayout>

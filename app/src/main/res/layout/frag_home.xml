@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/kota"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+
+        >
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/logojmo"
+            android:layout_alignParentLeft="true"
+
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_notifications_24"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="10dp"
+
+
+            />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rljaminan"
+
+            >
+            <TextView
+                android:id="@+id/txtProgramlayanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:text="Program Layanan" />
+
+
+
+            <LinearLayout
+                android:id="@+id/linearjamsostek"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/custom_background"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_below="@+id/txtProgramlayanan"
+                android:layout_marginTop="20dp"
+
+
+                >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/tabungan"
+                    android:scaleType="fitCenter"
+
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:id="@+id/txtjaminanharitua"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="5dp"
+
+                        android:text="Jaminan Hari Tua " />
+
+                    <TextView
+                        android:id="@+id/txtdtl1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtjaminanharitua"
+                        android:textSize="14sp"
+                        android:text="Anda sudah terdaftar di layanan ini " />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/centang"
+                        android:scaleType="fitCenter"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="20dp"
+
+                        />
+
+
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+<!--            keselamatan kerja-->
+
+            <LinearLayout
+                android:id="@+id/linearkesehatan"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/custom_background"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_below="@id/linearjamsostek"
+                android:layout_marginTop="10dp"
+
+
+                >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/helm"
+                    android:scaleType="fitCenter"
+
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:id="@+id/txtkerja"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="5dp"
+                        android:text="Jaminan Kecelakaan Kerja " />
+
+                    <TextView
+                        android:id="@+id/txtdtl2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtkerja"
+                        android:textSize="14sp"
+                        android:text="Anda sudah terdaftar di layanan ini " />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/centang"
+                        android:scaleType="fitCenter"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="20dp"
+
+                        />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/linearkesehatan"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_background_hijau"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:text="PROGRAM LAINNYA"
+                android:gravity="center"
+                android:id="@+id/btnProgramlainnya"
+                android:drawablePadding="2dip"
+                android:paddingLeft="30dip"
+                android:paddingRight="10dip"
+                android:textColor="@color/hijau_tua"
+                android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
+                />
+
+
+            <TextView
+                android:id="@+id/txtlayananlainnya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnProgramlainnya"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:text="Layanan Lainnya" />
+
+
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:id="@+id/menu_layanan"
+                android:columnWidth="80dp"
+                android:horizontalSpacing="15dp"
+                android:layout_margin="5dp"
+                android:numColumns="4"
+                android:verticalSpacing="15dp"
+                android:layout_below="@+id/txtlayananlainnya"
+
+                />
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>
